@@ -21,6 +21,7 @@ class _SignInState extends State<SignIn> {
         brightness: Brightness.light,
       ),
       body: Form(
+        key: _formKey,
         child: Container(
           margin: EdgeInsets.symmetric(horizontal: 24),
           child: Column(
@@ -45,7 +46,7 @@ class _SignInState extends State<SignIn> {
                   email = val;
                 },
               ),
-              SizedBox(height: 14,),
+              SizedBox(height: 24,),
               Container(
                 padding: EdgeInsets.symmetric(vertical: 16),
                 decoration: BoxDecoration(
@@ -55,6 +56,14 @@ class _SignInState extends State<SignIn> {
                 alignment: Alignment.center,
                 width: MediaQuery.of(context).size.width - 48,
                 child: Text("Sign In", style: TextStyle(color: Colors.white, fontSize: 20),),
+              ),
+              SizedBox(height: 18,),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text("Don't have an Account ? ", style: TextStyle(fontSize: 16),),
+                  Text("Sign Up", style: TextStyle(fontSize: 16, decoration: TextDecoration.underline),)
+                ],
               ),
 
               SizedBox(height: 80,),
