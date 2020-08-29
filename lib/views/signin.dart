@@ -1,3 +1,4 @@
+import 'package:QuizApp/views/signup.dart';
 import 'package:QuizApp/widgets/widgets.dart';
 import 'package:flutter/material.dart';
 
@@ -62,7 +63,13 @@ class _SignInState extends State<SignIn> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Text("Don't have an Account ? ", style: TextStyle(fontSize: 16),),
-                  Text("Sign Up", style: TextStyle(fontSize: 16, decoration: TextDecoration.underline),)
+                  GestureDetector(
+                      onTap: (){
+                        Navigator.pushReplacement(context, MaterialPageRoute(
+                            builder: (context) => SignUp()
+                        ));
+                      },
+                      child: Text("Sign Up", style: TextStyle(fontSize: 16, decoration: TextDecoration.underline),))
                 ],
               ),
 
