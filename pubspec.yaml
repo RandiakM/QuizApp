@@ -32,6 +32,12 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  cached_network_image: ^2.0.0
+  cloud_firestore: ^0.13.3
+  firebase_auth: ^0.15.2
+  provider: ^3.2.0
+  shared_preferences: ^0.5.6+3
+  random_string: ^2.0.1
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
